@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.17
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanteraSoftBack", "CanteraSoftBack\CanteraSoftBack.csproj", "{6CB09B53-0FCA-4EF6-A9AB-42613E2071CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CB09B53-0FCA-4EF6-A9AB-42613E2071CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CB09B53-0FCA-4EF6-A9AB-42613E2071CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CB09B53-0FCA-4EF6-A9AB-42613E2071CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CB09B53-0FCA-4EF6-A9AB-42613E2071CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7888FB06-3C09-47C5-B399-5876CF0C489B}
+	EndGlobalSection
+EndGlobal
