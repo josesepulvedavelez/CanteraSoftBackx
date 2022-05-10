@@ -28,6 +28,15 @@ namespace CanteraSoftBack
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<ICliente, ClienteDat>();
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                builder.WithOrigins("https://localhost:5002")
+                       .AllowAnyMethod()
+                       .AllowAnyHeader());
+            });
+
             services.AddControllers();
         }
 
@@ -36,12 +45,15 @@ namespace CanteraSoftBack
         {
             if (env.IsDevelopment())
             {
+                app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
                 app.UseDeveloperExceptionPage();
             }
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
