@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CanteraSoftBack.Contracts;
 using CanteraSoftBack.Data;
+using CanteraSoftBack.Dto;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +29,7 @@ namespace CanteraSoftBack
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<ICliente, ClienteDat>();
+            services.AddTransient<IVehiculo, VehiculoDat>();
 
             services.AddCors(options =>
             {

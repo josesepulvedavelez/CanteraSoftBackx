@@ -1,9 +1,9 @@
 ﻿using System;
-namespace CanteraSoftBack.Models
+namespace CanteraSoftBack.Dto
 {
-    public class VehiculoModel
+    public class VehiculoDto
     {
-        public VehiculoModel()
+        public VehiculoDto()
         {
         }
 
@@ -11,6 +11,7 @@ namespace CanteraSoftBack.Models
         public string Placa { get; set; }
         public double Mt3 { get; set; }
         public int ClienteId { get; set; }
+        public string Nombre { get; set; }
         public int Estado { get; set; }
         public string Observaciones { get; set; }
         public DateTime FechaLog { get; set; }
