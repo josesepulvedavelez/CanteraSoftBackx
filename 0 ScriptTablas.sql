@@ -126,3 +126,9 @@ CREATE TABLE Operacion
     FechaLog DATETIME DEFAULT GETDATE(),
     UsuarioLog VARCHAR(50)
 );
+
+CREATE TABLE Estado
+(
+    EstadoId INT IDENTITY(1, 1) PRIMARY KEY,
+    Estado VARCHAR(20)
+)
