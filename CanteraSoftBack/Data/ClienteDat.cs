@@ -18,7 +18,7 @@ namespace CanteraSoftBack.Data
         int result;
 
         #region querys
-        string querySeleccionarTodos = "SELECT * FROM Cliente WHERE Estado <> 0";
+        string querySeleccionarTodos = "SELECT * FROM Cliente WHERE Estado <> 2";
         string querySeleccionarPorId = "SELECT * FROM Cliente WHERE ClienteId=@ClienteId";
         string queryGuardar = "INSERT INTO Cliente(Nombre, NitCc, Contacto, Telefono, Celular, Correo, Estado, Observaciones, UsuarioLog) " +
                                 "VALUES(@Nombre, @NitCc, @Contacto, @Telefono, @Celular, @Correo, @Estado, @Observaciones, @UsuarioLog)";
