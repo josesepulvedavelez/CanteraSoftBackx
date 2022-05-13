@@ -19,11 +19,14 @@ namespace CanteraSoftBack.Data
 
         #region querys
         string querySeleccionarTodos = "SELECT * FROM Cliente WHERE Estado <> 2";
+
         string querySeleccionarPorId = "SELECT * FROM Cliente WHERE ClienteId=@ClienteId";
+
         string queryGuardar = "INSERT INTO Cliente(Nombre, NitCc, Contacto, Telefono, Celular, Correo, Estado, Observaciones, UsuarioLog) " +
-                                "VALUES(@Nombre, @NitCc, @Contacto, @Telefono, @Celular, @Correo, @Estado, @Observaciones, @UsuarioLog)";
+                              "VALUES(@Nombre, @NitCc, @Contacto, @Telefono, @Celular, @Correo, @Estado, @Observaciones, @UsuarioLog)";
+
         string queryActualizar = "UPDATE Cliente SET Nombre=@Nombre, NitCc=@NitCc, Contacto=@Contacto, Telefono=@Telefono, Celular=@Celular, Correo=@Correo, Estado=@Estado, Observaciones=@Observaciones " +
-                                    "WHERE ClienteId=@ClienteId";
+                                 "WHERE ClienteId=@ClienteId";
         #endregion
 
         public ClienteDat(IConfiguration configuration)

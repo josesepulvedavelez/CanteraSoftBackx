@@ -10,5 +10,6 @@ namespace CanteraSoftBack.Contracts
     public interface IVehiculo : IData<VehiculoModel>
     {
         new Task<List<VehiculoDto>> SeleccionarTodos();
+        new Task<VehiculoDto> SeleccionarPorId(int id);
     }
 }
